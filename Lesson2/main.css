@@ -77,9 +77,7 @@ img.resize {
     width:540px;
     height: auto;
 }
-li {
-    list-style-type: none;
-}
+
 li.listRightside {
     background-color: wheat;
     position: static;
@@ -104,19 +102,28 @@ li.listItem {
     grid-gap: 50px 100px;
   }
 
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 60px;
-}
+    overflow:hidden;
+    background-color: #333;
+  }
 
-li a{
+li {
+    float: left;
+}
+  
+li a {
     display: block;
-    width: 60px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
+  /* Change the link color to #111 (black) on hover */
 li a:hover {
-    background-color: #555;
-    color: rgb(223, 218, 159);
+    background-color: #111;
 }
