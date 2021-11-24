@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+body{
+    background-color: white;
+    margin: 0px;
+    padding: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+img.logo{
+    max-width: 275px;
+    max-height: 275px;
+    object-fit: scale-down;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+aside{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul.navigation {
+    
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background-color: #333;
+  }
+
+li.navigation {
+    float: left;
+}
+  
+li.navigation a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 6rem;
+}
+
+li.navigation a:hover {
+    background-color: #111;
+}
+
+
+
+.karta{
+    height: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+/*
+.organize{
+    float: left;
+    
+}
+*/
+
+/* article*/
+
+.imageItemsWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-transform:capitalize;
+    color: white;
+}
+
+.imageItemWrapper{
+    position:relative;
+    
+}
+
+.imageBackground{
+    height: 350px;
+    width: 100%;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: blanchedalmond;
+}
+
+div .imageItemWrapper p,ol{
+    position:absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 1rem;
+    color: black;
+}
+
+.imageTextWrapper{
+    position:absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 1rem;
+}
+
+.logoWrapper img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.imageTextWrapper .subtitle {
+    transition:1s;
+    color: transparent;
+    font-weight: 600;
+}
+
+.imageTextWrapper:hover .subtitle {
+    transition:1s;
+    color: white;
+    font-weight: 600;
+}
+
+
+div ol{
+    position:static;
+    padding:0px;
+    font-size: 1.3rem;
+}
+
+p.oppet1{
+    font-weight: 800;
+    font-size: 2rem;
+    color:rgb(43, 42, 42);
+    margin-top: -70px;
+}
+
+
+
+/*Menu page*/
+
+.contentBackground{
+    height: 350px;
+    width: 100%;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: blanchedalmond;
+}
+
+.parallax {
+    min-height: 300px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+div.imageBackground Table{
+    margin: auto;
+    text-align: left;
+    margin-top: 5rem;
+    font-size: 1rem;
+}
+div.imageBackground Table .subtitle{
+    color: rgb(124, 123, 123);
+    font-style: italic;
+    font-size: 0.6rem;
+
+}
+
+.menuBoxes{
+    /*display: grid;
+    grid-template-columns: 1fr 1fr 1fr;*/
+    float:left;
+    margin:auto;
+    margin-left:3rem;
+    
+}
+
+.menuBox{
+    position:relative;
+}
+
+/* Media query*/
+
+@media only screen and (max-width:600px) {
+    .imageItemsWrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-transform:capitalize;
+        color: white;
+    }
+
+    .imageTextWrapper > ol > li {
+        text-align: left;
+        list-style-type: none;
+        color: black;
+        font-size: 1rem;
+    }
+
+    img.logo{
+        max-width: 150px;
+        max-height: 150px;
+        object-fit: scale-down;
+    }
+}
